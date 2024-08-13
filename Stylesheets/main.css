@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+@font-face {
+  font-family: "gilroy";
+  src: url(Gilroy-Regular.ttf);
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.mobile {
+  display: none;
+}
+.main {
+  height: 180vh;
+  width: 100%;
+  color: white;
+  background-image:url(/images/macos-bg.jpg) ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+/* Conversation */
+.conversation {
+  background-color: rgba(66, 64, 60, 0.734);
+  backdrop-filter: blur(20px) !important;
+  width: 40%;
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vw;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: auto;
+  position: relative;
+  margin-left: 2.3vw;
+ 
+}
+.conversation h1 {
+  font-size: 2vw !important;
+text-align: center;
+  margin-bottom: 3vw;
+  color: #3B82F6;
+
+}
+.usermeg-cont{
+  width: 100%;
+  height:fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+.usermeg {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  font-family: "gilroy";
+  background-color: rgb(107, 112, 112);
+  padding: 10px;
+overflow-wrap: break-word;
+}
+#yourmesg{
+  color: rgb(221, 255, 0) ;
+  font-weight: 900;
+  margin-bottom: 0.3vw;
+  text-transform: uppercase;
+}
+ .usermeg p {
+  color: rgb(189, 177, 177);
+  font-weight: 600;
+} 
+.jack-cont{
+  width: 100%;
+  height:fit-content;
+  display: flex;
+  justify-content: flex-start;
+}
+.jackmeg{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  font-family: "gilroy";
+  background-color: rgb(107, 112, 112);
+  padding: 10px;
+overflow-wrap: break-word;
+}
+.jackmeg p{
+  color: rgb(189, 177, 177);
+  font-weight: 600;
+}
+ 
+#jack-reply {
+  color: rgb(255, 123, 0);
+  font-weight: 900;
+  margin-bottom: 0.3vw;
+  text-transform: uppercase;
+}
+#reset{
+  height: 20vw;
+  width: 20vw;
+  position: absolute;
+  right: 50%;
+  top: 60%;
+  left: 50%;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+#startbtn {
+  height: 2vw;
+  width: 4vw;
+  margin-top: 2.5vw;
+  position: relative;
+  top: -1%;
+  left: 50%;
+  right: 50%;
+ cursor: pointer;
+  transform: translate(-50%, -50%);
+   
+}
+#startbtn img{
+  height: 6vw;
+  width: 6vw;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+#stopbtn {
+  height: 2vw;
+  width: 4vw;
+  margin-top: 2.5vw;
+  position: relative;
+  top: -1%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  cursor: pointer;
+}
+#stopbtn img{
+  height: 6vw;
+  width: 6vw;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+h6 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: rgb(9, 190, 9);
+ 
+  position: absolute;
+  bottom: -4.5vw;
+  left: -50%;
+}
+/* Scrole Bar */  
+   
+ ::-webkit-scrollbar{
+  width: 5px;
+  
+ }
+ ::-webkit-scrollbar-thumb{
+ background: linear-gradient(#642bff,#ff22e6);
+ border-radius: 30px;
+ 
+ }
+ 
+/* Mobile */
+@media (max-width:800px) {
+  .mobile {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.8rem !important;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(237, 69, 69);
+ 
+  }
+  body{
+    display: none;
+  }
+   
+ 
+}

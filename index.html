@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J A C K</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/Stylesheets/main.css">
+    <link rel="stylesheet" href="/Stylesheets/userInfo.css">
+    <link rel="stylesheet" href="/Stylesheets/weather.css">
+    <link rel="stylesheet" href="/Stylesheets/time-charging-Section.css">
+    <link rel="stylesheet" href="/Stylesheets/commands.css">
+    <link rel="stylesheet" href="/Stylesheets/footer.css">
+    <link rel="shortcut icon" href="/images/fav.ico" type="image/x-icon">
+  </head>
+  <div class="mobile">
+    <h6>Comming Soon for mobile version . . . . .</h6>
+  </div>
+  <body>
+ 
+    <!-- User Info Form -->
+    <div class="userinfo">
+      <h2>
+        User Information
+      </h2>
+      <form action="/index.html">
+        <div class="input">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Your Name"  />
+
+        </div>
+<div class="input">
+  <i class="fa-solid fa-book bio"></i>
+  <input type="text" placeholder="Your Bio"  />
+</div>
+     
+        <div class="input">
+          <i class="fa-solid fa-location-dot location"></i>
+          <input type="text" placeholder="Your Location" />
+        </div>
+        <div class="input">
+          <i class="fa-brands fa-instagram instragram"></i>
+          <input type="text" placeholder="Instagram Profile Name"/>
+        </div>
+        <div class="input">
+          <i class="fa-brands fa-github github"></i>
+          <input type="text" placeholder="Github Profile Name " />
+        </div>
+    <button >SUBMIT</button>
+      </form>
+    </div>
+<!-- Commands start -->
+<div class="commands">
+  <h1 >Commands</h1>
+  <img id="close-commands" src="/images/close.png" alt="">
+  <ul>
+    <li>What is the developer Name</li>
+    <li>Opean developer profile</li>
+<li>Top 10 News headlines</li>
+<li>tell me about yourself</li>    
+<li>Oppen commands</li>
+    <li>My Full Weather forecast</li>
+    <li>search on google {  What do you want to search say that }</li>
+    <li>play {  What do you want to play on youtube say that } </li>
+    <li>clear my data</li>
+    <li>update my information</li>
+    <li>what is my name</li>
+    <li>bio</li>
+    <li>open my instagram profile</li>
+    <li>open my github profile</li>
+    <li>open youtube</li>
+    <li>open google</li>
+    <li>open github</li>
+  </ul>
+  
+</div>
+<!-- Commands End -->
+    <div class="main">
+      <div class="timer-charging">
+        <div class="timer">
+          <img src="/images/clock1.png" alt="">
+          <p id="time"></p>
+        </div><br>
+        <div class="battery">
+          <img src="/images/battery1.png" alt="">
+          <p id="batteryLevel"></p>
+        <p id="batteryStatus"></p>
+        </div>
+        <div class="internet-status">
+          <img src="images/internet1.png" alt="">
+          <p id="status">Online</p>
+        </div>
+      </div>
+      <div class="conversation">
+        <h1>J a c k   AI (V . 0 . 1)</h1>
+        <button
+        id="startbtn">
+         <img id="img" src="/images/microphone.png" alt="">
+        </button>
+        <button
+          id="stopbtn">
+         <img id="" src="/images/Stop.gif" alt="">
+         <h6>Listening.....</h6>
+      </button>
+</div>
+<img id="reset" title="Reset" src="/images/heart.gif" alt="">
+        
+
+      <!-- Weather  -->
+       <div class="weather">
+         <div class="display-none">
+       <h2 class="weather-info">Weather info</h2>
+          <div class="location-card">
+            <h1>Location</h1>
+            <p id="cityName"></p>
+            <p id="country"></p>
+            <p id="timeZone"></p>
+        </div>
+    
+        <div class="coords-card">
+            <div class="coord">
+                <h1>Coordinates</h1>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    
+        <div class="weather-card">
+            <h1>Weather</h1>
+            <p id="weatherType"></p>
+            <p id="weatherDesc"></p>
+            <br>
+            <img src="#" alt="not loaded" id="weatherImg">
+        </div>
+    
+        <div class="temperature-card">
+            <h1>Temperature</h1>
+            <div class="temp">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+         </div>
+
+         <div class="winds-card">
+             <h1>Wind</h1>
+             <div class="wind">
+                 <p></p>
+                 <p></p>
+             </div>
+         </div>
+     
+  
+         </div>
+       </div>
+<!-- Weather end -->
+<footer>
+      
+  <div class="socialmedia">
+   
+ 
+ <a href="https://github.com/Ahad-A28" id="github"><i class="fa-brands fa-github github"></i></a>
+    <a href="https://www.instagram.com/ahad.a28/" id="instagram"><i class="fa-brands fa-instagram instragram"></i></a>
+     
+  </div>
+  <p id="dev">Developed By Ahad.A28</p><br>
+  <p>© A28. All rights reserved.</p>
+</footer>
+
+    <!-- Script -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+ <script type="module" src="/Javascripts/script.js" defer></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <noscript>
+      For full functionality of this site it is necessary to enable JavaScript.
+      Here are the
+      <a href="https://www.enable-javascript.com/">
+        instructions how to enable JavaScript in your web browser</a
+      >.
+    </noscript>
+  </body>
+</html>

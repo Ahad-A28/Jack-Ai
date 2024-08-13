@@ -1,0 +1,67 @@
+.timer-charging {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 20%;
+  margin-right: 7vw;
+  padding: 4vw;
+  text-transform: uppercase;
+}
+.timer-charging img {
+  height: 3vw;
+  background-color: white;
+  border-radius: 50%;
+}
+.timer {
+  margin-left:9vw;
+}
+.timer p {
+  margin-left: -0.5vw;
+  margin-top: 1vw;
+  width: 9vw;
+  font-weight: 900;
+  font-size: 1.4vw;
+ 
+}
+.timer img{
+  margin-left:1.5vw;
+}
+
+ 
+.battery {
+
+  margin-right:8.5vw;
+}
+.battery img {
+  margin-left: 3.5vw;
+}
+.battery p {
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+ 
+  width: 10vw;
+}
+#batteryStatus{
+  position: absolute;
+top: 7.2vw;
+left: 13.9vw;
+font-size: 1.5vw;
+font-weight: 900;
+}
+#batteryLevel{
+  font-weight: 900;
+  font-size: 1.5vw;
+}
+.internet-status {
+  margin-left: -5vw;
+}
+.internet-status img{
+  margin-left: 0.5vw;
+}
+#status  {
+  margin-left: -0.5vw;
+  margin-top: 1vw;
+color: rgb(47, 255, 0);
+font-weight: 900;
+font-size: 1.5vw;
+}
