@@ -200,7 +200,7 @@ recognition.onend = function () {
     h6.style.display = "inline-block";
     setTimeout(() => {
       recognition.start();
-    }, 2000);
+    }, 6000);
   } else if (stopingR === true) {
     recognition.stop();
     stopbtn.style.display = "none";
