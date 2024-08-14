@@ -154,7 +154,7 @@ window.open("https://www.youtube.com/");
      window.open(`https://www.google.com/search?q=${input}`)  ;
      ;
   }
-  if (transcript.includes("shutdown")) {
+  if (transcript.includes("shutdown")||transcript.includes("shut down")) {
     readout("ok sir, shutting down the system");
     stopingR = true;
   }
@@ -200,7 +200,7 @@ recognition.onend = function () {
     h6.style.display = "inline-block";
     setTimeout(() => {
       recognition.start();
-    }, 6000);
+    }, 1000);
   } else if (stopingR === true) {
     recognition.stop();
     stopbtn.style.display = "none";
