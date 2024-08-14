@@ -380,14 +380,12 @@ setInterval(() => {
 }, 1000);
 // News Setup
 async function getNews (){
-  let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=7dbd0218fd274d2293bf9adf386ab730"
+  let url = "//newsapi.org/v2/top-headlines?country=in&apiKey=7dbd0218fd274d2293bf9adf386ab730"
   let req = new Request(url)
 await fetch(req).then((response) => response.json()) 
 .then((data) => {
 let ArrNews = data.articles
-console.log(ArrNews) 
 ArrNews.length = 10
-console.log(ArrNews)
 let a = []
 ArrNews.forEach((element,index) => {
   a.push("............ ")
@@ -399,6 +397,5 @@ a.push(element.title)
 
 })
 readout(a)
-console.log(a)
 })
 }
