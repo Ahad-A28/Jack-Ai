@@ -200,7 +200,7 @@ recognition.onend = function () {
     h6.style.display = "inline-block";
     setTimeout(() => {
       recognition.start();
-    }, 500);
+    }, 2000);
   } else if (stopingR === true) {
     recognition.stop();
     stopbtn.style.display = "none";
@@ -352,7 +352,7 @@ function batterycallback(batteryObject) {
   printBatteryStatus(batteryObject);
   setInterval(function () {
     printBatteryStatus(batteryObject);
-  }, 1000);
+  }, 3000);
 }
 
 function printBatteryStatus(batteryObject) {
