@@ -26,6 +26,10 @@ let audio = document.querySelector("#audio");
 let stopingR;
 
 // Event listeners
+document.querySelector("#opencommands").onclick = function(){
+  commands.style.display = "inline-block";
+  readout("opening commands, I follow the following commands");
+}
 let closebtn = document
   .querySelector("#close-commands")
   .addEventListener("click", function () {
@@ -39,13 +43,6 @@ let closebtn = document
   document.querySelector(".main").style.display = "none";
   document.querySelector(".commands").style.display = "none";
   })
-//  onload 
-
-window.onload = function () {
-  // commands.style.display = "inline-block";
-  // readout("Hear are commands that i can do")
-};
- 
 // speech recognition Setup
 
 const SpeechRecognition =

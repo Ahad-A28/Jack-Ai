@@ -18,7 +18,7 @@ body {
   display: none;
 }
 .main {
-  height: 180vh;
+  height: 97vw;
   width: 100%;
   color: white;
   background-image:url(/images/macos-bg.jpg) ;
@@ -33,7 +33,7 @@ body {
   background-color: rgba(66, 64, 60, 0.734);
   backdrop-filter: blur(20px) !important;
   width: 40%;
-  height: 18%;
+  height: 24%;
   display: flex;
   flex-direction: column;
   margin-top: 1vw;
@@ -107,8 +107,8 @@ overflow-wrap: break-word;
   width: 20vw;
   position: absolute;
   right: 50%;
-  top: 60%;
-  left: 50%;
+  top: 30vw;
+  left: 15vw;
   border-radius: 50%;
   background: transparent;
   cursor: pointer;
@@ -131,7 +131,7 @@ overflow-wrap: break-word;
   height: 6vw;
   width: 6vw;
   position: relative;
-  top: 50%;
+  top: 60%;
   left: 50%;
   right: 50%;
   cursor: pointer;
@@ -169,6 +169,46 @@ h6 {
   bottom: -4.5vw;
   left: -50%;
 }
+/* Opean command btn */
+ 
+#opencommands {
+  cursor: pointer;
+  --border-size: 2px;
+  --border-angle: 0turn;
+  height: fit-content;
+  margin-top: 3.5vw;
+  padding: 2vw;
+ text-transform: uppercase;
+ font-weight: 900;
+ font-size: 1.5vw;
+  background-color: transparent;
+  text-align: center;
+  color: rgb(173, 239, 18);
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: bg-spin 2s linear infinite;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 /* Scrole Bar */  
    
  ::-webkit-scrollbar{
@@ -182,21 +222,45 @@ h6 {
  }
  
 /* Mobile */
-@media (max-width:800px) {
-  .mobile {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+@media (max-width:900px) {
+  .mobile  {
     height: 100%;
-    font-size: 1.8rem !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+ position: fixed;
+ background-image:url(/images/macos-bg.jpg) ;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover
+
+  }
+  .mobile h4{
     font-weight: 900;
     text-transform: uppercase;
-    color: rgb(237, 69, 69);
+   color: rgb(78, 247, 0);
+    font-size: 35px;
+ word-wrap: break-word;
+  }
+ .weather{
+  display: none;
+ }
+.commands{
+  display: none;
  
-  }
-  body{
-    display: none;
-  }
+}
+.userinfo{
+  display: none;
+}
+.main{
+  display: none;
+}
+
    
  
 }
+
+ 

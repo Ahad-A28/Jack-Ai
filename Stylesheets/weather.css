@@ -1,13 +1,14 @@
 .weather {
     position: absolute;
-    right: 0;
+    right: 0.4vw;
     top: 0;
     background-color: rgba(128, 128, 128, 0.503);
     backdrop-filter: blur(20px) !important;
-    padding: 50px;
+    padding: 45px;
     width: 30%;
-    height: fit-content;
+    height: 88vw;
     border-radius: 10px;
+    overflow: scroll;
   }
   .weather h1 {
     text-transform: uppercase;
